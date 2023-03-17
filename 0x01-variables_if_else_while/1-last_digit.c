@@ -1,19 +1,19 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
- * main - print last digit of number and whether it is
- * greater than 5 or less than 6 or equal 0
+/**
+ * main - determine if the last digit of no
+ * is greater than 5 or less than 6 or equal 0
  * Return: 0
  */
 int main(void)
 {
 	int n;
-	int x;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	x = n % 10;
+	int x = n % 10;
+
 	if (x > 5)
 	{
 		printf("Last digit of %d is %d and is greater than 5\n", n, x);
